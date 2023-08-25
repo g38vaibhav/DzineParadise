@@ -1,6 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-.www.carbonads.net	TRUE	/	FALSE	1999999999	__cf_bm	TfTEW5BKfyWQhUKeUn4neZgDkcEdwd9nlgy_sobyyyk-1692936545-0-AX9ARWzND0ZO+Azi9/CRON2d5k0zFjDqDw80EymVX3SPHuaSTaCxgEVDeR+fT5otQQJctI6NdyX9DHsXV6eQpGw=
-.www.carbonads.net	TRUE	/	FALSE	1999999999	__cfruid	11c6eee341dc83e648e85f5a3d96ff154f098fe9-1692936545
-www.carbonads.net	TRUE	/	FALSE	1999999999	SameSite	None
-
