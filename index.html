@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Company Website</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  body {
+     /* background: linear-gradient(90deg, #FF5733, #FFB733); Adjust the colors as needed */
+  }
+  .navbar-brand, .navbar-nav a {
+    color: black;
+  }
+  .get-quote-btn {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .get-quote-btn:hover {
+    background-color: #e67e22;
+  }
+  .products {
+    color: black;
+    padding: 10px 10px;
+  }
+  .grid-item {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .grid-item img {
+    width: 100%;
+    height: auto;
+  }
+  .grid-item-content {
+    padding: 20px;
+  }
+.all-contents,.aboutus{
+    text-align: center;
+    color: #222222;
+    font-size: 24px;
+    font-weight: bold;
+}
+.why-dzine, .about{
+    position: relative;
+    background-color: #fff;
+    padding: 32px 0px;
+    height: 100%;
+    z-index: 9;
+  }
+.icons {
+    padding: 0 15%;
+    margin: 30px 0px;
+}
+ .card {
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+            margin-top:2px;
+        }
+ .card:hover {
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+            margin-top:0px;
+        }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-secondary bg-gradient">
+  <div class="container">
+    <a class="navbar-brand " href="#">Dzine Paradise</a>
+    <button class="navbar-toggler shadow-none border-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-md-end gap-3" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <button class="get-quote-btn ">Get a Quote</button>
+    </div>
+  </div>
+</nav>
+
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <img src="one.jpg" style="width: 100%; max-width: none; height: 80vh; object-fit: cover;" alt="Image">
+
+    </div>
+    <div class="carousel-item">
+    <img src="two.jpg" style="width: 100%; max-width: none; height: 80vh; object-fit: cover;" alt="Image">
+    </div>
+    <div class="carousel-item">
+    <img src="three.jpg" style="width: 100%; max-width: none; height: 80vh; object-fit: cover;" alt="Image">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="categories">
+    <div class="category-contents text-center fs-3 fw-semibold p-3">Categories</div>
+     <div class="categ d-flex flex-wrap gap-2 justify-content-center p-2 gap-3">
+      <div class="card  border-1" style="width: 220px; height: 180px;">
+        <img class="card-img-top rounded" src="image1.jpg" alt="Card image cap">
+         <div class="card-body mx-auto p-1">
+           <p><a href="#" class="link-offset-1 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Modular Kitchen</a></p>
+         </div> 
+      </div>
+      <div class="card p-0 border-0" style="width: 220px; height: 180px;">
+        <img class="card-img-top rounded" src="image1.jpg" alt="Card image cap">
+         <div class="card-body mx-auto p-1">
+           <p><a href="#" class="link-offset-1 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Modular Kitchen</a></p>
+         </div> 
+      </div>
+      <div class="card p-0 border-0" style="width: 220px; height: 180px;">
+        <img class="card-img-top rounded" src="image1.jpg" alt="Card image cap">
+         <div class="card-body mx-auto p-1">
+           <p><a href="#" class="link-offset-1 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Modular Kitchen</a></p>
+         </div> 
+      </div>
+      <div class="card p-0 border-0" style="width: 220px; height: 180px;">
+        <img class="card-img-top rounded" src="image1.jpg" alt="Card image cap">
+         <div class="card-body mx-auto p-1">
+           <p><a href="#" class="link-offset-1 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Modular Kitchen</a></p>
+         </div> 
+      </div>
+      <div class="card p-0 border-0" style="width: 220px; height: 180px;">
+        <img class="card-img-top rounded" src="image1.jpg" alt="Card image cap">
+         <div class="card-body mx-auto p-1">
+           <p><a href="#" class="link-offset-1 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Modular Kitchen</a></p>
+         </div> 
+      </div>
+      <div class="card p-0 border-0" style="width: 220px; height: 180px;">
+        <img class="card-img-top rounded" src="image1.jpg" alt="Card image cap">
+         <div class="card-body mx-auto p-1">
+           <p><a href="#" class="link-offset-1 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Modular Kitchen</a></p>
+         </div> 
+      </div>
+      <div class="card p-0 border-0" style="width: 220px; height: 180px;">
+        <img class="card-img-top rounded" src="image1.jpg" alt="Card image cap">
+         <div class="card-body mx-auto p-1">
+           <p><a href="#" class="link-offset-1 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Modular Kitchen</a></p>
+         </div> 
+      </div>
+      <div class="card p-0 border-0" style="width: 220px; height: 180px;">
+        <img class="card-img-top rounded" src="image1.jpg" alt="Card image cap">
+         <div class="card-body mx-auto p-1">
+           <p><a href="#" class="link-offset-1 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Modular Kitchen</a></p>
+         </div> 
+      </div>
+      <div class="card p-0 border-0" style="width: 220px; height: 180px;">
+        <img class="card-img-top rounded" src="image1.jpg" alt="Card image cap">
+         <div class="card-body mx-auto p-1">
+           <p><a href="#" class="link-offset-1 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Modular Kitchen</a></p>
+         </div> 
+      </div>
+      <div class="card p-0 border-0" style="width: 220px; height: 180px;">
+        <img class="card-img-top rounded" src="image1.jpg" alt="Card image cap">
+         <div class="card-body mx-auto p-1">
+           <p><a href="#" class="link-offset-1 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Modular Kitchen</a></p>
+         </div> 
+      </div>
+     </div>
+   </div>
+ </div>
+
+
+<div class="why-dzine" style="background-color: rgb(255, 255, 255);">
+    <div class="all-contents">Why Dzine Paradise?</div> 
+     <div class="icons d-flex flex-row flex-wrap justify-content-center gap-5">
+      <div><img src="https://super.homelane.com/RTB/installation_days.svg" width="106px" height="112px"></div> 
+      <div><img src="https://super.homelane.com/RTB/homes_completed.svg" width="106px" height="112px"></div>
+      <div><img src="https://super.homelane.com/RTB/design_experts.svg" width="106px" height="112px"></div>
+      <div><img src="https://super.homelane.com/RTB/material_warranty.svg" width="106px" height="112px"></div>
+     </div>
+</div>
+   
+<div class="about my-5 p-3">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non ligula bibendum, consequat libero eget, efficitur urna. Duis bibendum justo in tristique condimentum.</p>
+      <p>Nullam nec dui id purus fermentum eleifend nec et libero. Etiam eu arcu non massa dignissim venenatis.</p>
+    </div>
+    <div class="col-md-6">
+      <img src="image1.jpg" alt="About Us" class="img-fluid ">
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
