@@ -357,21 +357,23 @@ body.dark .search-field i{
 }
 .carousel .card {
   scroll-snap-align: start;
-  height: 300px;
   list-style: none;
   background: #fff;
   cursor: pointer;
-  padding-bottom: 15px;
+  padding: 10px;
   flex-direction: column;
   border-radius: 8px;
 }
 .carousel .card .img {
+  width: 100%;
+  max-width: none;
   height: 250px;
-  width: 300px;
 }
 .card .img img {
-  width: 300px;
-  object-fit: contain;
+  max-width: none;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 .carousel .card h2 {
   font-weight: 500;
@@ -445,6 +447,11 @@ body.dark .search-field i{
 
 .layer{
   background: URL('wall-mural.jpg');
+  width: 100%; 
+  max-width: none; 
+  height: 60vh;
+  object-fit: cover;
+  position: relative;
 }
 .homePage{
   display: flex;
@@ -455,6 +462,8 @@ body.dark .search-field i{
   object-fit: cover;
   width: 100%;
   max-width: none;
+  position: absolute;
+  bottom: 0;
 }
 .homeInner{
   width: 100%;
@@ -464,6 +473,7 @@ body.dark .search-field i{
   border: 0px solid #ffffff;
   padding: 20px;
   margin-bottom: 20px;
+  position: absolute;
 }
 .homeInner h1{
   font-family: 'Gabarito', cursive;
