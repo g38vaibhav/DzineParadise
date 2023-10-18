@@ -15,18 +15,19 @@
 
     <!-- ===== FONTS ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
 
-
-    <script src="script.js" defer></script>
   </head>
   
   <body style="background-color: #f3f3f3;">
     <nav>
       <div class="nav-bar">
           <i class='bx bx-menu sidebarOpen' ></i>
-          <span class="logo navLogo"><a href="#">Dzine Paradise</a></span>
+          <div class="mainLogo">
+            <img src="logo.png" style="width: 40px;" alt="logo">
+            <span class="logo navLogo"><a href="#">Dzine Paradise</a></span>
+          </div>          
           <div class="menu">
             <div class="logo-toggle">
                 <span class="logo"><a href="#">Dzine Paradise</a></span>
@@ -37,43 +38,72 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#aboutus">About Us</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
           <div class="darkLight-searchBox">
             <div class="dark-light">
-                <i class='bx bxs-moon moon'></i>
-                <i class='bx bx-sun sun'></i>
+                <i class='fa-brands fa-whatsapp'></i>
             </div>
             <div class="searchBox">
               <div class="searchToggle">
-               <i class='bx bx-x cancel'></i>
-               <i class='bx bx-search search'></i>
+               <i class='fa-brands fa-instagram'></i>
               </div>
-               <div class="search-field">
-                   <input type="text" placeholder="Search...">
-                   <i class='bx bx-search'></i>
-               </div>
            </div>
         </div>
       </div>
   </nav>
 
 <div class="layer">
-  <img src="wall-mural.jpg" style="width: 100%; max-width: none; height: 60vh; object-fit: cover;" alt="Image">
- <div class="homePage">
+  <img src="wall-mural.jpg" style="width: 100%; max-width: none; height: 50vh; object-fit: cover;" alt="Image">
+  <div class="homePage">
     <div class="homeInner">
       <h1 class="fw-bold font-weight-bold display-1">Dzine Paradise</h1>    
-      <button type="button" class="btn" style="background-color: #176B87; margin-top: 20px;">Get A Free Consultation</button>
+      <button type="button" class="btn" data-toggle="modal" data-target="#form-dialog" style="background-color: #176B87; margin-top: 20px; border-radius: 25px; height: 40px;">Get A Free Consultation</button>
      </div>
   </div>
 </div>
-  
+
+<!-- Form Modal -->
+
+<div tabindex="-1" class="modal pmd-modal fade" id="form-dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: #fdfdfd7e; max-width: 400px;">
+            <div class="modal-header pmd-modal-border">
+                <h2 class="modal-title">Get Free Consultation</h2>
+            </div>
+            <div class="modal-body">
+                <form id="myForm" method="POST" 
+                    action="https://script.google.com/macros/s/AKfycbyAYDaL5tFmdZV9q9K_gCkxd1J_fCD8Hmogk2rjL0fj_V9xPWzy05w7wY99eOsZJfZ2sQ/exec">
+                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                        <label for="full-name">Full Name</label>
+                        <input name="Name" id="full-name" class="form-control" type="text">
+                    </div>
+                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                        <label for="email">Email Address</label>
+                        <input name="Email" type="email" class="mat-input form-control" id="email" value="">
+                    </div>
+                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                        <label for="mobil">Mobile No.</label>
+                        <input name="Mobile" type="tel" class="mat-input form-control" id="mobil" value="">
+                    </div>
+                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                        <label class="control-label">Address</label>
+                        <textarea name="Address" required class="form-control" cols="30" rows="4" ></textarea>
+                    </div>                
+                    <div class="btnsubmit d-flex justify-content-end align-items-right mt-3">
+                      <button  class="btn" type="submit" style="background-color: #1c2331; color: white;" >Submit</button>
+                    </div> 
+                  </form>                 
+            </div>
+        </div>
+    </div>
 </div>
+
 
 <div class="slidebox" id="services">
     <div class="wrapper text-center">
-      <h4 clas="p-3 text-uppercase text-light-emphasis">Your Ideal Home Construction Solutions</h4>
+      <h2 clas="p-3  fw-bold font-weight-bold">Your Ideal Home Construction Solutions</h2>
     </div>
   </div>
 
@@ -89,7 +119,7 @@
   </div>
   <div class="flex-item">
     <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/room.png" alt="room"/>
-    <p><a href="#" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Interior Designing</a></p>
+    <p><a href="interior.html" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Interior Designing</a></p>
   </div>
   <div class="flex-item">
     <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/bill.png" alt="bill"/>
@@ -126,13 +156,13 @@
 </div>
 </div>
 
-<div class="slidebox" id="gallery">
+<div class="slidebox" style="padding-left: 20px;" id="gallery">
     <div class="wrapper">
-      <h2 >GALLERY</h2>
+      <h2>GALLERY</h2>
     </div>
   </div>
 
-<div class="slidebox">
+<div class="slidebox" style="padding-left: 20px;">
   <div class="wrapper" id="carousel1">
     <i id="left" class="fa-solid fa-angle-left"></i>
     <ul class="carousel">
@@ -166,7 +196,7 @@
 </div>  
 
 <div id="aboutus" class="about my-10 p-5 rounded">
-  <div class="row">
+  <div class="row shadow">
     <div class="col-md-6">
       <h2>ABOUT US</h2>
       <p>At Dzine Paradise, we are passionate about transforming spaces into beautiful, functional, and inspiring environments. With a team of highly skilled and creative interior designers, we bring innovation and elegance to every project we undertake.</p>
@@ -178,107 +208,120 @@
   </div>
 </div>
 
-
   <!-- Footer -->
   <footer
-          class="text-center text-lg-start text-white" style="background-color: #04364A">
-    <!-- Grid container -->
-    <div class="container p-4 pb-0">
-      <!-- Section: Links -->
-      <section class="">
-        <!--Grid row-->
-        <div class="row">
+          class="text-center text-lg-start text-white pt-1"
+          style="background-color: #1c2331"
+          >
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
           <!-- Grid column -->
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">Dzine Paradise</h6>
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">Dzine Paradise</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 125px; background-color: #7c4dff; height: 2px"
+                />
+                <p>At Dzine Paradise, we are passionate about transforming spaces into beautiful, functional, and inspiring
+                   environments. With a team of highly skilled and creative interior designers, we bring innovation and elegance
+                    to every project we undertake.
+                  </p>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Services</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 85px; background-color: #7c4dff; height: 2px"
+                />
             <p>
-              Here you can use rows and columns to organize your footer
-              content. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit.
+              <a href="2dlayout.html" class="text-white">2D Layout</a>
+            </p>
+            <p>
+              <a href="3delevation.html" class="text-white">2D Elevation</a>
+            </p>
+            <p>
+              <a href="interior.html" class="text-white">Interiors</a>
+            </p>
+            <p>
+              <a href="boq.html" class="text-white">Detailed BOQ</a>
             </p>
           </div>
           <!-- Grid column -->
 
-          <hr class="w-100 clearfix d-md-none" />
-
           <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 100px; background-color: #7c4dff; height: 2px"
+                />
             <p>
-              <a class="text-white">Home Interiors</a>
+              <a href="#!" class="text-white">Home</a>
             </p>
             <p>
-              <a class="text-white">3D Elevation</a>
+              <a href="#!" class="text-white">Services</a>
             </p>
             <p>
-              <a class="text-white">Wallpaper & Paint</a>
+              <a href="#!" class="text-white">About Us</a>
             </p>
             <p>
-              <a class="text-white">2D Layout</a>
+              <a href="#!" class="text-white">Contact Us</a>
             </p>
           </div>
           <!-- Grid column -->
 
-          <hr class="w-100 clearfix d-md-none" />
-
           <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">
-              Useful links
-            </h6>
-            <p>
-              <a class="text-white">Services</a>
-            </p>
-            <p>
-              <a class="text-white">Become an Affiliate</a>
-            </p>
-            <p>
-              <a class="text-white">About Us</a>
-            </p>
-            <p>
-              <a class="text-white">Gallery</a>
-            </p>
-          </div>
-
-          <!-- Grid column -->
-          <hr class="w-100 clearfix d-md-none" />
-
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-            <p><i class="fas fa-home mr-3"></i> Mahalakshmi Nagar, Indore</p>
-            <p><i class="fas fa-envelope mr-3"></i> Dzinep05@gmail.com</p>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 80px; background-color: #7c4dff; height: 2px"
+                />
+            <p><i class="fas fa-home mr-3"></i> Vijay Nagar, Indore, MP</p>
+            <p><i class="fas fa-envelope mr-3"></i> dzinep05@gmail.com</p>
             <p><i class="fas fa-phone mr-3"></i> + 91 860 206 3193</p>
             <p><i class="fas fa-print mr-3"></i> + 91 860 206 3193</p>
           </div>
           <!-- Grid column -->
         </div>
-        <!--Grid row-->
-      </section>
-      <!-- Section: Links -->
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
 
-      <hr class="my-3">
+    <!-- Section: Social media -->
+    <section
+             class="d-flex justify-content-center p-2 align-items-center"
+             style="background-color: #00000067;"
+             >
+      <!-- Left -->
+      <div
+      class="text-center p-3"
+      style="background-color: rgba(0, 0, 0, 0)"
+      >
+   © 2020 Copyright:
+   <a class="text-white" href="https://dzineparadise.com/"
+      >DzineParadise.com</a
+     >
+ </div>
+ <!-- Copyright -->
+      <!-- Left -->
 
-      <!-- Section: Copyright -->
-      <section class="p-3 pt-0">
-        <div class="row d-flex align-items-center">
-          <!-- Grid column -->
-          <div class="col-md-7 col-lg-8 text-center text-md-start">
-            <!-- Copyright -->
-            <div class="p-3">
-              © 2020 Copyright:
-              <a class="text-white" href="https://dzineparadise.com/"
-                 >Dzineparadise.com</a
-                >
-            </div>
-            <!-- Copyright -->
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-            <!-- Facebook -->
-            <a
+      <!-- Right -->
+      <div>
+        <a
                class="btn btn-outline-light btn-floating m-1"
                class="text-white"
                role="button"
@@ -308,20 +351,18 @@
                role="button"
                ><i class="fab fa-instagram"></i
               ></a>
-          </div>
-          <!-- Grid column -->
-        </div>
-      </section>
-      <!-- Section: Copyright -->
-    </div>
-    <!-- Grid container -->
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
   </footer>
   <!-- Footer -->
+
 
      <!-- Link to Bootstrap JS (Optional, for Bootstrap features like modal dialogs) -->
      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <script src="script.js" defer></script>
 
-
-  </body>
+    </body>
