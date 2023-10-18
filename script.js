@@ -1,4 +1,35 @@
 
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("myForm").addEventListener("submit", function(e) { e.preventDefault();
+
+        const currentDate = new Date();
+    
+        // Get the day, month, and year
+        const day = currentDate.getDate();
+        const month = currentDate.getMonth() + 1; // Months are zero-based, so add 1
+        const year = currentDate.getFullYear();
+    
+        // Format the date as "DD/MM/YYYY" (you can customize the format)
+        const formattedDate = `${day}/${month}/${year}`;
+    
+    
+    
+        // Create a hidden input field to store the timestamp
+        const hiddenInput = document.createElement("input");
+        hiddenInput.type = "hidden";
+        hiddenInput.name = "Date";
+        hiddenInput.value = formattedDate;
+    
+        // Append the hidden input to the form
+        document.getElementById("myForm").appendChild(hiddenInput);
+    
+        // Submit the form
+        document.getElementById("myForm").submit();
+    });
+});
+
+
 const body = document.querySelector("body"),
       nav = document.querySelector("nav"),
       modeToggle = document.querySelector(".dark-light"),
@@ -9,22 +40,6 @@ const body = document.querySelector("body"),
           if(getMode && getMode === "dark-mode"){
             body.classList.add("dark");
           }
-// js code to toggle dark and light mode
-      modeToggle.addEventListener("click" , () =>{
-        modeToggle.classList.toggle("active");
-        body.classList.toggle("dark");
-        // js code to keep user selected mode even page refresh or file reopen
-        if(!body.classList.contains("dark")){
-            localStorage.setItem("mode" , "light-mode");
-        }else{
-            localStorage.setItem("mode" , "dark-mode");
-        }
-      });
-// js code to toggle search box
-        searchToggle.addEventListener("click" , () =>{
-        searchToggle.classList.toggle("active");
-      });
- 
       
 //   js code to toggle sidebar
 sidebarOpen.addEventListener("click" , () =>{
@@ -36,11 +51,6 @@ body.addEventListener("click" , e =>{
         nav.classList.remove("active");
     }
 });
-
-
-
-
-
 
 function initializeCarousel(wrapperId) {
     const wrapper = document.getElementById(wrapperId);
@@ -135,3 +145,6 @@ initializeCarousel("carousel1");
 
 // Initialize the carousel for the second div
 initializeCarousel("carousel2");
+
+
+
