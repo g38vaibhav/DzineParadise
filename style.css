@@ -10,7 +10,7 @@
 }
 :root{
     --body-color: #f19447;
-    --nav-color: #04364A;
+    --nav-color: #1c2331;
     --side-nav: #010718;
     --text-color: #FFF;
     --search-bar: #F2F2F2;
@@ -47,7 +47,7 @@ body.dark nav{
 nav .nav-bar{
     position: relative;
     height: 100%;
-    max-width: 1000px;
+    max-width: 1300px;
     width: 100%;
     background-color: var(--nav-color);
     margin: 0 auto;
@@ -95,24 +95,6 @@ nav .nav-bar .logo a{
     padding: 10px;
 }
 
-.nav-links li a::before{
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
-    background-color: var(--text-color);
-    opacity: 0;
-    transition: all 0.3s ease;
-}
-
-.nav-links li:hover a::before{
-    opacity: 1;
-}
-
 .nav-bar .darkLight-searchBox{
     display: flex;
     align-items: center;
@@ -137,19 +119,9 @@ nav .nav-bar .logo a{
     transition: all 0.3s ease;
 }
 
-.dark-light i.sun{
-    opacity: 0;
-    pointer-events: none;
-}
-
 .dark-light.active i.sun{
     opacity: 1;
     pointer-events: auto;
-}
-
-.dark-light.active i.moon{
-    opacity: 0;
-    pointer-events: none;
 }
 
 .searchToggle i.cancel{
@@ -162,30 +134,9 @@ nav .nav-bar .logo a{
     pointer-events: auto;
 }
 
-.searchToggle.active i.search{
-    opacity: 0;
-    pointer-events: none;
-}
 
 .searchBox{
     position: relative;
-}
-
-.searchBox .search-field{
-    position: absolute;
-    bottom: -85px;
-    right: 5px;
-    height: 50px;
-    width: 300px;
-    display: flex;
-    align-items: center;
-    background-color: var(--nav-color);
-    padding: 3px;
-    border-radius: 6px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
 }
 
 .searchToggle.active ~ .search-field{
@@ -446,10 +397,9 @@ body.dark .search-field i{
 }
 
 .layer{
-  background: URL('wall-mural.jpg');
   width: 100%; 
   max-width: none; 
-  height: 60vh;
+  height: 50vh;
   object-fit: cover;
   position: relative;
 }
@@ -457,7 +407,7 @@ body.dark .search-field i{
   display: flex;
   justify-content: center;
   align-items:end;
-  height: 60vh;
+  height: 50vh;
   background-color: rgba(0, 0, 0, 0.432);
   object-fit: cover;
   width: 100%;
@@ -470,7 +420,6 @@ body.dark .search-field i{
   max-width: 1300px;
   height:25vh;
   z-index: 1;
-  border: 0px solid #ffffff;
   padding: 20px;
   margin-bottom: 20px;
   position: absolute;
@@ -528,3 +477,19 @@ body.dark .search-field i{
   height: auto; /* Maintain aspect ratio */
   width: 200px;
 }
+.contact{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.contact-form{
+  max-width: 1500px;
+  background: rgba(255, 255, 255, 0);
+  padding: 10px;
+}
+.box-one span{
+  color: #1c2331;
+}
+
