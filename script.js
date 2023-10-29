@@ -1,34 +1,42 @@
 
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzwUq6UGgXiA_gCRs7yzdSAyQZRf8FuGM4POjqq3mkmuxGwgvhjRV3remjuDSDkL03Z/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const success= document.getElementById('success');
+      const successMessage = document.getElementById("successMessage");
+      const errorMessage = document.getElementById("errorMessage");
 
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("myForm").addEventListener("submit", function(e) { e.preventDefault();
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => { successMessage.style.display = "block"; errorMessage.style.display = "none";})
+          .catch(error => {successMessage.style.display = "none"; errorMessage.style.display = "block";})}) 
 
-        const currentDate = new Date();
+//document.addEventListener("DOMContentLoaded", function() {
+    //document.getElementById("myForm").addEventListener("submit", function(e) {e.preventDefault();
+
+      //  const currentDate = new Date();
     
         // Get the day, month, and year
-        const day = currentDate.getDate();
-        const month = currentDate.getMonth() + 1; // Months are zero-based, so add 1
-        const year = currentDate.getFullYear();
+      //  const day = currentDate.getDate();
+      //  const month = currentDate.getMonth() + 1; // Months are zero-based, so add 1
+       // const year = currentDate.getFullYear();
     
         // Format the date as "DD/MM/YYYY" (you can customize the format)
-        const formattedDate = `${day}/${month}/${year}`;
-    
-    
+       // const formattedDate = `${day}/${month}/${year}`;
     
         // Create a hidden input field to store the timestamp
-        const hiddenInput = document.createElement("input");
-        hiddenInput.type = "hidden";
-        hiddenInput.name = "Date";
-        hiddenInput.value = formattedDate;
+       // const hiddenInput = document.createElement("input");
+       // hiddenInput.type = "hidden";
+       // hiddenInput.name = "Date";
+       // hiddenInput.value = formattedDate;
     
         // Append the hidden input to the form
-        document.getElementById("myForm").appendChild(hiddenInput);
+      //  document.getElementById("myForm").appendChild(hiddenInput);
     
         // Submit the form
-        document.getElementById("myForm").submit();
-    });
-});
-
+      //  document.getElementById("myForm").submit();
+    //});
+//});
 
 const body = document.querySelector("body"),
       nav = document.querySelector("nav"),
