@@ -49,7 +49,7 @@
   </nav>
 
   <div class="banner">
-    <img src="wall-mural.jpg" style="width: 100%; max-width: none; height: 60vh; object-fit: cover;" alt="Image">
+    <img src="3delev.png" style="width: 100%; max-width: 1700px; max-height: 700px; object-fit: cover;" alt="Image">
  </div> 
 
 <div class="box">
@@ -57,9 +57,51 @@
     <h3>3D Elevation</h3>
     <h6 class="pt-4">A 3D elevation is a three-dimensional representation of a two-dimensional elevation found in an architectural drawing. Real estate professionals improve the 3D designs and showcase the photorealistic renderings to their potential buyers</h6>
     <h6 class="pt-2">Get a conceptual 3D Elevation of your new home as per your requirements.</h6>
-    <h6 class="pt-2">Price :- Rs. 2000 onwards</h6>
+    <h6 class="pt-2">Price :- Starting Rs. 10000</h6>
+    <button type="button" class="getBtn" data-toggle="modal" data-target="#form-dialog">Get Started Now</button>
   </div>
 </div>
+
+<!-- Form Modal -->
+
+<div tabindex="-1" class="modal pmd-modal fade" id="form-dialog" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" style="background-color: #afa939; border-radius: 0;">
+          <div class="modal-header justify-content-end p-0" style="border-bottom: 0px;">
+            <button aria-hidden="true" data-dismiss="modal" class="close" type="button" style="background-color: #b8b352; height: 40px; width: 40px; border: 0px;">×</button>
+          </div>
+          <div class="modal-body">
+              <form name="submit-to-google-sheet" style="margin-inline: 30px; color: white;">
+                <a>Booking an Appointment</a>
+                <h3>Free Consultation</h3>
+                  <div class="form-group ">
+                      <input name="Name" id="full-name" class="form-control" type="text" placeholder="Name" style="padding: 12px; background-color: #b8b352; margin-bottom: 15px; border: 0px;
+                      border-radius: 0;">
+                  </div>
+                  <div class="form-group ">
+                      <input name="Email" type="email" class="mat-input form-control" id="email" value="" placeholder="Email Address" style="padding: 12px; background-color: #b8b352; margin-bottom: 15px; border: 0px;
+                      border-radius: 0;">
+                  </div>
+                  <div class="form-group ">
+                      <input name="Mobile" type="tel" class="mat-input form-control" id="mobil" value="" placeholder="Mobile No." style="padding: 12px; background-color: #b8b352; margin-bottom: 15px; border: 0px;
+                      border-radius: 0;">
+                  </div>
+                  <div class="form-group ">
+                      <textarea name="Address" required class="form-control" cols="30" rows="4" placeholder="Address" style="padding: 12px; background-color: #b8b352; margin: 5px 5px 15px; border: 0px;
+                      border-radius: 0;" ></textarea>
+                  </div>                
+                  <div class="btnsubmit mt-3" >
+                    <button  class="btn" type="submit" style="padding: 12px; background-color: #1c2331; color: white; width: 100%; max-width: 100%;" >Submit</button>
+                  </div> 
+                </form>  
+                <div id="successMessage" style="display: none; color: green;">Form submitted successfully!</div>
+                <div id="errorMessage" style="display: none; color: red;">Form submission failed. Please try again.</div>            
+          </div>
+      </div>
+  </div>
+</div>
+
+
 
 <div class="slidebox" id="services">
     <div class="wrapper text-start">
@@ -70,15 +112,15 @@
 <div class="SampleBox">
   <div class="sample-container">
     <div class="sample-item">
-      <img src="2d.JPG" alt="structural"/>
+      <img src="elevation1.jpg" alt="structural"/>
       <p><a href="#" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">3D Elevation</a></p>
     </div>
     <div class="sample-item">
-      <img src="2d.JPG" alt="structural"/>
+      <img src="elevation2.jpg" alt="structural"/>
       <p><a href="#" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">3D Elevation</a></p>
     </div>
     <div class="sample-item">
-      <img src="2d.JPG" alt="structural"/>
+      <img src="elevation3.jpg" alt="structural"/>
       <p><a href="#" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">3D Elevation</a></p>
     </div>
 </div>
@@ -120,16 +162,16 @@
        style="width: 85px; background-color: #7c4dff; height: 2px"
        />
    <p>
-     <a href="2dlayout.html" class="text-white">2D Layout</a>
+     <a href="2dlayout.html" class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">2D Layout</a>
    </p>
    <p>
-     <a href="3delevation.html" class="text-white">2D Elevation</a>
+     <a href="#" class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">3D Elevation</a>
    </p>
    <p>
-     <a href="interior.html" class="text-white">Interiors</a>
+     <a href="interior.html" class="link-light link-offset-2 link-underline-opacity-0  link-underline-opacity-100-hover">Interiors</a>
    </p>
    <p>
-     <a href="boq.html" class="text-white">Detailed BOQ</a>
+     <a href="boq.html" class="link-light link-offset-2 link-underline-opacity-0  link-underline-opacity-100-hover">Detailed BOQ</a>
    </p>
  </div>
  <!-- Grid column -->
@@ -143,16 +185,16 @@
        style="width: 100px; background-color: #7c4dff; height: 2px"
        />
    <p>
-     <a href="#!" class="text-white">Home</a>
+     <a href="#" class="link-light link-offset-2 link-underline-opacity-0  link-underline-opacity-100-hover">Home</a>
    </p>
    <p>
-     <a href="#!" class="text-white">Services</a>
+     <a href="index.html#services" class="link-light link-offset-2 link-underline-opacity-0  link-underline-opacity-100-hover">Services</a>
    </p>
    <p>
-     <a href="#!" class="text-white">About Us</a>
+     <a href="index.html#aboutus" class="link-light link-offset-2 link-underline-opacity-0  link-underline-opacity-100-hover">About Us</a>
    </p>
    <p>
-     <a href="#!" class="text-white">Contact Us</a>
+     <a href="contact.html" class="link-light link-offset-2 link-underline-opacity-0  link-underline-opacity-100-hover">Contact Us</a>
    </p>
  </div>
  <!-- Grid column -->
@@ -165,10 +207,9 @@
        class="mb-4 mt-0 d-inline-block mx-auto"
        style="width: 80px; background-color: #7c4dff; height: 2px"
        />
-   <p><i class="fas fa-home mr-3"></i> Vijay Nagar, Indore, MP</p>
-   <p><i class="fas fa-envelope mr-3"></i> dzinep05@gmail.com</p>
-   <p><i class="fas fa-phone mr-3"></i> + 91 860 206 3193</p>
-   <p><i class="fas fa-print mr-3"></i> + 91 860 206 3193</p>
+   <p><i class="fas fa-home mr-3"></i><a href="https://maps.app.goo.gl/C3bpJQxA53y4RDsj9" class="link-light link-offset-2 link-underline-opacity-0  link-underline-opacity-100-hover">Mahalakshmi Nagar, Indore, MP</a></p>
+   <p><i class="fas fa-envelope mr-3"></i><a  href = "mailto: gvaibhav35@gmail.com" class="link-light link-offset-2 link-underline-opacity-0  link-underline-opacity-100-hover"> dzinep05@gmail.com</a></p>
+   <p><i class="fas fa-phone mr-3"></i><a  href = "tel: +91860-206-3193" class="link-light link-offset-2 link-underline-opacity-0  link-underline-opacity-100-hover"> + 91 860 206 3193</a></p>
  </div>
  <!-- Grid column -->
 </div>
@@ -197,7 +238,7 @@ style="background-color: rgba(0, 0, 0, 0)"
 
 <!-- Right -->
 <div>
-<a
+<a     href="https://wa.me/919039790105"
       class="btn btn-outline-light btn-floating m-1"
       class="text-white"
       role="button"
@@ -205,7 +246,7 @@ style="background-color: rgba(0, 0, 0, 0)"
      ></a>
 
    <!-- Twitter -->
-   <a
+   <a href="https://wa.me/919039790105"
       class="btn btn-outline-light btn-floating m-1"
       class="text-white"
       role="button"
@@ -213,7 +254,7 @@ style="background-color: rgba(0, 0, 0, 0)"
      ></a>
 
    <!-- Google -->
-   <a
+   <a href="https://wa.me/919039790105"
       class="btn btn-outline-light btn-floating m-1"
       class="text-white"
       role="button"
@@ -221,7 +262,7 @@ style="background-color: rgba(0, 0, 0, 0)"
      ></a>
 
    <!-- Instagram -->
-   <a
+   <a  href="https://instagram.com/dzinep05"
       class="btn btn-outline-light btn-floating m-1"
       class="text-white"
       role="button"
@@ -240,4 +281,6 @@ style="background-color: rgba(0, 0, 0, 0)"
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="script.js" defer></script>
-  </body>
+
+</body>
+</html>
