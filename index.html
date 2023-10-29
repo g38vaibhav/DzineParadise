@@ -41,11 +41,13 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-          <div class="darkLight-searchBox">
-            <div class="dark-light">
-                <i class='fa-brands fa-whatsapp'></i>
-            </div>
-        </div>
+        <div class="darkLight-searchBox">
+          <a href="https://wa.me/919039790105" target="_blank">
+              <div class="dark-light">
+                  <i class="fa-brands fa-whatsapp"></i>
+              </div>
+          </a>
+      </div>
       </div>
   </nav>
 
@@ -54,7 +56,8 @@
   <div class="homePage">
     <div class="homeInner">
       <h1 class="fw-bold font-weight-bold display-1">Dzine Paradise</h1>    
-      <button type="button" class="btn" data-toggle="modal" data-target="#form-dialog" style="background-color: #176B87; margin-top: 20px; border-radius: 25px; height: 40px;">Get A Free Consultation</button>
+      <h4 style="color: rgba(255, 255, 255, 0.993);">Transforming Spaces, Creating Comfort<br></h4>    
+      <button type="button" class="getBtn" data-toggle="modal" data-target="#form-dialog">Get Started Now</button>
      </div>
   </div>
 </div>
@@ -62,37 +65,40 @@
 <!-- Form Modal -->
 
 <div tabindex="-1" class="modal pmd-modal fade" id="form-dialog" style="display: none;" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content" style="background-color: #fdfdfd7e; max-width: 400px;">
-            <div class="modal-header pmd-modal-border">
-                <h2 class="modal-title">Get Free Consultation</h2>
-            </div>
-            <div class="modal-body">
-                <form id="myForm" method="POST" 
-                    action="https://script.google.com/macros/s/AKfycbyAYDaL5tFmdZV9q9K_gCkxd1J_fCD8Hmogk2rjL0fj_V9xPWzy05w7wY99eOsZJfZ2sQ/exec">
-                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
-                        <label for="full-name">Full Name</label>
-                        <input name="Name" id="full-name" class="form-control" type="text">
-                    </div>
-                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
-                        <label for="email">Email Address</label>
-                        <input name="Email" type="email" class="mat-input form-control" id="email" value="">
-                    </div>
-                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
-                        <label for="mobil">Mobile No.</label>
-                        <input name="Mobile" type="tel" class="mat-input form-control" id="mobil" value="">
-                    </div>
-                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
-                        <label class="control-label">Address</label>
-                        <textarea name="Address" required class="form-control" cols="30" rows="4" ></textarea>
-                    </div>                
-                    <div class="btnsubmit d-flex justify-content-end align-items-right mt-3">
-                      <button  class="btn" type="submit" style="background-color: #1c2331; color: white;" >Submit</button>
-                    </div> 
-                  </form>                 
-            </div>
-        </div>
-    </div>
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" style="background-color: #afa939; border-radius: 0;">
+          <div class="modal-header justify-content-end p-0" style="border-bottom: 0px;">
+            <button aria-hidden="true" data-dismiss="modal" class="close" type="button" style="background-color: #b8b352; height: 40px; width: 40px; border: 0px;">×</button>
+          </div>
+          <div class="modal-body">
+              <form name="submit-to-google-sheet" style="margin-inline: 30px; color: white;">
+                <a>Booking an Appointment</a>
+                <h3>Free Consultation</h3>
+                  <div class="form-group ">
+                      <input name="Name" id="full-name" class="form-control" type="text" placeholder="Name" style="padding: 12px; background-color: #b8b352; margin-bottom: 15px; border: 0px;
+                      border-radius: 0;">
+                  </div>
+                  <div class="form-group ">
+                      <input name="Email" type="email" class="mat-input form-control" id="email" value="" placeholder="Email Address" style="padding: 12px; background-color: #b8b352; margin-bottom: 15px; border: 0px;
+                      border-radius: 0;">
+                  </div>
+                  <div class="form-group ">
+                      <input name="Mobile" type="tel" class="mat-input form-control" id="mobil" value="" placeholder="Mobile No." style="padding: 12px; background-color: #b8b352; margin-bottom: 15px; border: 0px;
+                      border-radius: 0;">
+                  </div>
+                  <div class="form-group ">
+                      <textarea name="Address" required class="form-control" cols="30" rows="4" placeholder="Address" style="padding: 12px; background-color: #b8b352; margin: 5px 0px 15px; border: 0px;
+                      border-radius: 0;" ></textarea>
+                  </div>                
+                  <div class="btnsubmit mt-3" >
+                    <button  class="btn" type="submit" style="padding: 12px; background-color: #1c2331; color: white; width: 100%; max-width: 100%;" >Submit</button>
+                  </div> 
+                </form>  
+                <div id="successMessage" style="display: none; color: green;">Form submitted successfully!</div>
+                <div id="errorMessage" style="display: none; color: red;">Form submission failed. Please try again.</div>            
+          </div>
+      </div>
+  </div>
 </div>
 
 
@@ -111,39 +117,39 @@
     <div class="flex-item">
       <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/home.png" alt="home"/>
       <p><a href="3delevation.html" href="2dlayout.html" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">3D Elevation</a></p>
-  </div>
-  <div class="flex-item">
-    <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/room.png" alt="room"/>
-    <p><a href="interior.html" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Interior Designing</a></p>
-  </div>
-  <div class="flex-item">
-    <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/bill.png" alt="bill"/>
-    <p><a href="#" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Detailed BOQ</a></p>
-  </div>
-  <div class="flex-item">
-    <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/umbrella.png" alt="umbrella"/>
-    <p><a href="#" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Waterproofing</a></p>
-  </div>
-  <div class="flex-item">
-    <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/3d-fluency-foundation.png" alt="3d-fluency-foundation"/>
-    <p><a href="#" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Construction</a></p>
-  </div>
-  <div class="flex-item">
-    <img width="94" height="94" src="https://img.icons8.com/external-kmg-design-outline-color-kmg-design/94/external-compass-summer-kmg-design-outline-color-kmg-design.png" alt="external-compass-summer-kmg-design-outline-color-kmg-design"/>
-     <p><a href="#" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Vaastu</a></p>
-  </div>
-  <div class="flex-item">
-    <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/stack-of-photos.png" alt="stack-of-photos"/>
-    <p><a href="#" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Readymade <br> 2D Layout</a></p>
-  </div>
-  <div class="flex-item">
-    <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/design.png" alt="design"/>  
-    <p><a href="#" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Rough Estimate</a></p>
-  </div>
-  <div class="flex-item">
-    <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/home-decorations.png" alt="home-decorations"/>
-    <p><a href="#" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Decoration</a></p>
-  </div>
+    </div>
+    <div class="flex-item">
+     <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/room.png" alt="room"/>
+     <p><a href="interior.html" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Interior Designing</a></p>
+    </div>
+    <div class="flex-item">
+      <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/bill.png" alt="bill"/>
+      <p><a href="#" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Detailed BOQ</a></p>
+    </div>
+    <div class="flex-item">
+      <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/umbrella.png" alt="umbrella"/>
+      <p><a href="#" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Waterproofing</a></p>
+    </div>
+    <div class="flex-item">
+      <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/3d-fluency-foundation.png" alt="3d-fluency-foundation"/>
+      <p><a href="#" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Construction</a></p>
+    </div>
+    <div class="flex-item">
+      <img width="94" height="94" src="https://img.icons8.com/external-kmg-design-outline-color-kmg-design/94/external-compass-summer-kmg-design-outline-color-kmg-design.png" alt="external-compass-summer-kmg-design-outline-color-kmg-design"/>
+       <p><a href="vaastu.html" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Vaastu</a></p>
+    </div>
+    <div class="flex-item">
+      <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/stack-of-photos.png" alt="stack-of-photos"/>
+      <p><a href="#" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Readymade <br> 2D Layout</a></p>
+    </div>
+    <div class="flex-item">
+      <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/design.png" alt="design"/>  
+      <p><a href="#" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Rough Estimate</a></p>
+    </div>
+    <div class="flex-item">
+      <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/home-decorations.png" alt="home-decorations"/>
+      <p><a href="#" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Decoration</a></p>
+    </div>
     <div class="flex-item">
       <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/roller-brush.png" alt="roller-brush"/>
       <p><a href="#" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Wallpaper & Paint</a></p>
@@ -162,6 +168,21 @@
     <i id="left" class="fa-solid fa-angle-left"></i>
     <ul class="carousel">
       <li class="card">
+        <div class="img"><img src="image4.jpg" alt="img" draggable="false"></div>
+      </li>
+      <li class="card">
+        <div class="img"><img src="image5.jpg" alt="img" draggable="false"></div>
+      </li>
+      <li class="card">
+        <div class="img"><img src="image6.jpg" alt="img" draggable="false"></div>
+      </li>
+      <li class="card">
+        <div class="img"><img src="image7.jpg" alt="img" draggable="false"></div>
+      </li>
+      <li class="card">
+        <div class="img"><img src="image8.jpg" alt="img" draggable="false"></div>
+      </li>
+      <li class="card">
         <div class="img"><img src="image1.jpg" alt="img" draggable="false"></div>
       </li>
       <li class="card">
@@ -179,12 +200,6 @@
       <li class="card">
         <div class="img"><img src="lr.png" alt="img" draggable="false"></div>
       </li>
-      <li class="card">
-        <div class="img"><img src="image1.jpg" alt="img" draggable="false"></div>
-      </li>
-      <li class="card">
-        <div class="img"><img src="image1.jpg" alt="img" draggable="false"></div>
-      </li>
     </ul>
     <i id="right" class="fa-solid fa-angle-right"></i>
   </div>
@@ -194,11 +209,11 @@
   <div class="row shadow">
     <div class="col-md-6">
       <h2>ABOUT US</h2>
-      <p>At Dzine Paradise, we are passionate about transforming spaces into beautiful, functional, and inspiring environments. With a team of highly skilled and creative interior designers, we bring innovation and elegance to every project we undertake.</p>
-      <p>We believe in the transformative power of design, and we're excited to embark on this creative journey with you. Our goal is to exceed your expectations and turn your vision into reality.</p>
+      <p style="text-align: justify;" style="text-align: justify;"><br>At Dzine Paradise, we are passionate about transforming spaces into beautiful, functional, and inspiring environments. With a team of highly skilled and creative interior designers, we bring innovation and elegance to every project we undertake.</p>
+      <p style="text-align: justify;">We believe in the transformative power of design, and we're excited to embark on this creative journey with you. Our goal is to exceed your expectations and turn your vision into reality.</p>
     </div>
     <div class="col-md-6">
-      <img src="image1.jpg" alt="About Us" class="img-fluid ">
+      <img src="imagem.jpg" alt="About Us" class="img-fluid ">
     </div>
   </div>
 </div>
@@ -239,16 +254,16 @@
                 style="width: 85px; background-color: #7c4dff; height: 2px"
                 />
             <p>
-              <a href="2dlayout.html" class="text-white">2D Layout</a>
+              <a href="2dlayout.html" class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">2D Layout</a>
             </p>
             <p>
-              <a href="3delevation.html" class="text-white">2D Elevation</a>
+              <a href="3delevation.html" class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">3D Elevation</a>
             </p>
             <p>
-              <a href="interior.html" class="text-white">Interiors</a>
+              <a href="interior.html" class="link-light link-offset-2 link-underline-opacity-0  link-underline-opacity-100-hover">Interiors</a>
             </p>
             <p>
-              <a href="boq.html" class="text-white">Detailed BOQ</a>
+              <a href="boq.html" class="link-light link-offset-2 link-underline-opacity-0  link-underline-opacity-100-hover">Detailed BOQ</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -262,16 +277,16 @@
                 style="width: 100px; background-color: #7c4dff; height: 2px"
                 />
             <p>
-              <a href="#!" class="text-white">Home</a>
+              <a href="#" class="link-light link-offset-2 link-underline-opacity-0  link-underline-opacity-100-hover">Home</a>
             </p>
             <p>
-              <a href="#!" class="text-white">Services</a>
+              <a href="#services" class="link-light link-offset-2 link-underline-opacity-0  link-underline-opacity-100-hover">Services</a>
             </p>
             <p>
-              <a href="#!" class="text-white">About Us</a>
+              <a href="#aboutus" class="link-light link-offset-2 link-underline-opacity-0  link-underline-opacity-100-hover">About Us</a>
             </p>
             <p>
-              <a href="#!" class="text-white">Contact Us</a>
+              <a href="contact.html" class="link-light link-offset-2 link-underline-opacity-0  link-underline-opacity-100-hover">Contact Us</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -284,11 +299,10 @@
                 class="mb-4 mt-0 d-inline-block mx-auto"
                 style="width: 80px; background-color: #7c4dff; height: 2px"
                 />
-            <p><i class="fas fa-home mr-3"></i> Vijay Nagar, Indore, MP</p>
-            <p><i class="fas fa-envelope mr-3"></i> dzinep05@gmail.com</p>
-            <p><i class="fas fa-phone mr-3"></i> + 91 860 206 3193</p>
-            <p><i class="fas fa-print mr-3"></i> + 91 860 206 3193</p>
-          </div>
+                <p><i class="fas fa-home mr-3"></i><a href="https://maps.app.goo.gl/C3bpJQxA53y4RDsj9" class="link-light link-offset-2 link-underline-opacity-0  link-underline-opacity-100-hover">Mahalakshmi Nagar, Indore, MP</a></p>
+                <p><i class="fas fa-envelope mr-3"></i><a  href = "mailto: gvaibhav35@gmail.com" class="link-light link-offset-2 link-underline-opacity-0  link-underline-opacity-100-hover"> dzinep05@gmail.com</a></p>
+                <p><i class="fas fa-phone mr-3"></i><a  href = "tel: +91860-206-3193" class="link-light link-offset-2 link-underline-opacity-0  link-underline-opacity-100-hover"> + 91 860 206 3193</a></p>
+              </div>
           <!-- Grid column -->
         </div>
         <!-- Grid row -->
@@ -316,7 +330,7 @@
 
       <!-- Right -->
       <div>
-        <a
+        <a     href="https://wa.me/919039790105"
                class="btn btn-outline-light btn-floating m-1"
                class="text-white"
                role="button"
@@ -324,7 +338,7 @@
               ></a>
 
             <!-- Twitter -->
-            <a
+            <a href="https://wa.me/919039790105"
                class="btn btn-outline-light btn-floating m-1"
                class="text-white"
                role="button"
@@ -332,7 +346,7 @@
               ></a>
 
             <!-- Google -->
-            <a
+            <a href="https://wa.me/919039790105"
                class="btn btn-outline-light btn-floating m-1"
                class="text-white"
                role="button"
@@ -340,7 +354,7 @@
               ></a>
 
             <!-- Instagram -->
-            <a
+            <a  href="https://instagram.com/dzinep05"
                class="btn btn-outline-light btn-floating m-1"
                class="text-white"
                role="button"
@@ -361,3 +375,4 @@
      <script src="script.js" defer></script>
 
     </body>
+    </html>
