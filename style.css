@@ -47,11 +47,11 @@ body.dark nav{
 nav .nav-bar{
     position: relative;
     height: 100%;
-    max-width: 1300px;
+    max-width: 1200px;
     width: 100%;
     background-color: var(--nav-color);
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -106,8 +106,6 @@ nav .nav-bar .logo a{
 
 .darkLight-searchBox .dark-light,
 .darkLight-searchBox .searchToggle{
-    height: 40px;
-    width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,78 +116,9 @@ nav .nav-bar .logo a{
 .searchToggle i{
     position: absolute;
     color: var(--text-color);
-    font-size: 22px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-
-.dark-light.active i.sun{
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.searchToggle i.cancel{
-    opacity: 0;
-    pointer-events: none;
-}
-
-.searchToggle.active i.cancel{
-    opacity: 1;
-    pointer-events: auto;
-}
-
-
-.searchBox{
-    position: relative;
-}
-
-.searchToggle.active ~ .search-field{
-    bottom: -74px;
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.search-field::before{
-    content: '';
-    position: absolute;
-    right: 14px;
-    top: -4px;
-    height: 12px;
-    width: 12px;
-    background-color: var(--nav-color);
-    transform: rotate(-45deg);
-    z-index: -1;
-}
-
-.search-field input{
-    height: 100%;
-    width: 100%;
-    padding: 0 45px 0 15px;
-    outline: none;
-    border: none;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--search-text);
-    background-color: var(--search-bar);
-}
-
-body.dark .search-field input{
-    color: var(--text-color);
-}
-
-.search-field i{
-    position: absolute;
-    color: var(--nav-color);
-    right: 15px;
-    font-size: 22px;
-    cursor: pointer;
-}
-
-body.dark .search-field i{
-    color: var(--text-color);
-}
-
 @media (max-width: 915px) {
     nav .nav-bar .sidebarOpen{
         display: block;
@@ -243,14 +172,25 @@ body.dark .search-field i{
         margin-top: 20px;
     }
 }
-
+.slide-outer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.slide-inner{
+  max-width: 1300px;
+  background-color: white;
+  border-radius: 10px;
+  margin-inline: 10px;
+}
 .slidebox {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5px;
-  margin-top: 20px;
-  border-radius: 10px;
+  margin-top: 10px;
+  border-radius: 10px; 
 }
 .wrapper {
   max-width: 1300px;
@@ -278,15 +218,15 @@ body.dark .search-field i{
   transform: translateY(-50%) scale(0.85);
 }
 .wrapper i:first-child{
-  left: -22px;
+  left: -15px;
 }
 .wrapper i:last-child{
-  right: -22px;
+  right: -15px;
 }
 .wrapper .carousel{
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 2.95) - 12px);
+  grid-auto-columns: calc((100% / 2.95));
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: 16px;
@@ -345,7 +285,7 @@ body.dark .search-field i{
 
 @media screen and (max-width: 900px) {
   .wrapper .carousel {
-    grid-auto-columns: calc((100% / 2) - 9px);
+    grid-auto-columns: calc((100% / 2));
   }
 }
 
@@ -379,7 +319,7 @@ body.dark .search-field i{
   margin: 5px;
   border-radius: 10px;
   border: 1px solid #ddd;
-  background-color: white;
+  background-color: #f3f3f3;;
   text-align: center;
   padding: 10px;
 }
@@ -399,6 +339,7 @@ body.dark .search-field i{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 15px;
 }
 .about .row{
   max-width: 1300px;
@@ -428,7 +369,7 @@ body.dark .search-field i{
 }
 .homeInner{
   width: 100%;
-  max-width: 1300px;
+  max-width: 1200px;
   height:25vh;
   z-index: 1;
   padding: 20px;
@@ -474,6 +415,7 @@ body.dark .search-field i{
   justify-content: center;
   align-items: center;
   padding-bottom: 20px;
+  padding-left: 15px;
 }
 
 .sample-container {
@@ -490,7 +432,7 @@ body.dark .search-field i{
 .sample-item {
   margin: 5px;
   border-radius: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #afa939;
   background-color: white;
   text-align: center;
   max-width: 270px;
@@ -529,7 +471,7 @@ body.dark .search-field i{
 }
 .centerPara{
    width: 100%;
-   max-width: 1300px;
+   max-width: 1200px;
    padding: 20px;
    padding: 10px;
    background-color: white;
@@ -548,4 +490,10 @@ body.dark .search-field i{
   font-size: large;
   font-weight: 500;
   text-align: justify;
+}
+
+@media (min-width: 600px) {
+  .hidden-ss {
+    display: none !important;
+  }
 }
