@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Fontawesome Link for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- ===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
@@ -15,11 +14,17 @@
     <!-- ===== FONTS ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+    
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
 
   </head>
   
-  <body style="background-color: #f3f3f3;">
+  <body>
     <nav>
       <div class="nav-bar">
           <i class='bx bx-menu sidebarOpen' ></i>
@@ -43,53 +48,195 @@
         <div class="darkLight-searchBox">
           <a href="https://wa.me/918602063193" target="_blank">
               <div class="dark-light">
-                  <i class="fa-brands fa-whatsapp fa-2xl" style="color: rgb(6, 129, 6);"></i>
+                  <i class="fa-brands fa-whatsapp fa-xl" style="color: rgb(6, 129, 6);"></i>
               </div>
           </a>
       </div>
       </div>
   </nav>
 
-<div class="layer">
-  <img src="wall-mural.jpg" style="width: 100%; max-width: none; height: 50vh; object-fit: cover;" alt="Image">
-  <div class="homePage">
-    <div class="homeInner">
-      <h1 class="fw-bold font-weight-bold display-1">Dzine Paradise</h1>    
-      <h4 style="color: rgba(255, 255, 255, 0.993);">Transforming Spaces,<br class="hidden-ss"> Creating Comfort<br></h4>       
-      <button type="button" class="getBtn" data-toggle="modal" data-target="#form-dialog">Get Started Now</button>
-     </div>
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+      <img src="wall-mural.jpg" style="width: 100%; max-width: none; height: 70vh; object-fit: cover;" alt="Image">
+  
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.shopify.com/s/files/1/0565/7080/6458/files/merry-bird-wallpaper-mural-living-room.jpg" style="width: 100%; max-width: none; height: 70vh; object-fit: cover;" alt="Image">
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.shopify.com/s/files/1/1917/6601/files/70_s_Interior_Design.jpg?v=1639394285" style="width: 100%; max-width: none; height: 70vh; object-fit: cover;" alt="Image">
+      </div>  
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<div class="main-box" style="display: flex; justify-content: center; align-items: center; background-color: #116466;">
+  <div class="sec-box " style="display: flex; flex-direction: column; justify-content: center; align-items: center;  width: 100%; 
+   background-image: url('back.svg'); padding: 30px;">
+    <h2 style="font-weight: 800; max-width: 1200px; text-align: center; margin-top: 20px; color: #2c3531;">Transform your space into your personal masterpiece. Connect with us to begin your design journey today.</h2>
+    <button type="button" class="getBtn" data-toggle="modal" data-target="#form-dialog" style="color: #2c3531; animation: zoom-in-zoom-out 1.5s ease infinite; width: 180px; font-weight: 800; background-color: white;">CONNECT NOW</button>
+  </div>
+</div>  
+
+<div id="aboutus" class="about rounded">
+  <div class="row ">
+    <div class="col-md-6">
+      <h2 style="font-weight: 800; color: #116466;">Elevating Spaces, Inspiring Lives: Our Story of Design Excellence.</h2>
+      <div class="line" style="width: 60px; height: 5px; border-radius: 5px; background-color: #2c3531; margin-bottom: 20px;"></div>
+      <p style="text-align: justify;">At Dzine Paradise, we are passionate about transforming spaces into beautiful, functional, and inspiring environments. With a team of highly skilled and creative interior designers, we bring innovation and elegance to every project we undertake.</p>
+      <p style="text-align: justify;">We believe in the transformative power of design, and we're excited to embark on this creative journey with you. Our goal is to exceed your expectations and turn your vision into reality.</p>
+    </div>
+    <div class="col-md-6">
+      <img src="imagem.jpg" alt="About Us" class="img-fluid ">
+    </div>
+  </div>
+</div>
+
+<div class="box1" style="display: flex; justify-content: center; padding: 10px; margin-top: 50px; background-color: #fafcff;">
+  <div class="box2" style="max-width: 1300px;">
+    <div class="wrappers text-center" style="display: flex; flex-direction: column;">
+      <h1 clas="p-3" style="font-weight: 800; color: #2c3531;">Your Ideal <span style="color: #116466;">Home Construction Solutions</span></h1>
+      <div class="line" style="width: 60px; height: 5px; border-radius: 5px; background-color: #2c5351; margin: auto; margin-bottom: 20px;"></div>
+      <h4 clas="p-3" style="font-weight: 600;">A one-stop solution to turn your vision into reality.</h4>
+    </div>
+    <div class="box3">
+      <div class="box-in" style="display: flex; position: relative; flex-wrap: wrap; justify-content: space-around; align-items: center;">
+        <div class="box-item" style="overflow: hidden; display: flex; flex-direction: column; justify-content: end; align-items: end; margin-inline: 15px; margin: 10px;">  
+          <img  src="elevation1.jpg" style="width: 100%; max-width: 300px; height: 280px; object-fit: cover; border-radius: 3px;" alt="Image">   
+          <a class="btn mx-auto" href="2dlayout.html" role="button" style=" z-index: 1000; margin-top: -15px; width: 200px; background-color: #116466; color: #d1e8e2;">2D Floor Plan</a>
+        </div>
+        <div class="box-item" style="overflow: hidden; display: flex; flex-direction: column; justify-content: end; align-items: end; margin-inline: 15px; margin: 10px; border-radius: 3px;">  
+          <img src="elevation2.jpg" style="width: 100%; max-width: 300px; height: 280px; object-fit: cover; border-radius: 3px;" alt="Image">   
+          <a class="btn mx-auto" href="3delevation.html" role="button" style="z-index: 1000; margin-top: -15px; width: 200px; background-color: #116466; color: #d1e8e2;">3D Elevation</a>
+        </div>
+        <div class="box-item" style="overflow: hidden; display: flex; flex-direction: column; justify-content: end; align-items: end; margin-inline: 15px; margin: 10px; border-radius: 3px;">  
+          <img src="elevation3.jpg" style="width: 100%; max-width: 300px; height: 280px; object-fit: cover; border-radius: 3px;" alt="Image">   
+          <a class="btn mx-auto" href="interior.html" role="button" style="z-index: 1000; margin-top: -15px; width: 200px; background-color: #116466; color: #d1e8e2;">Interior Designing</a>
+        </div>
+        <div class="box-item" style="overflow: hidden; display: flex; flex-direction: column; justify-content: end; align-items: end; margin-inline: 15px; margin: 10px; border-radius: 3px;">  
+          <img src="elevation4.jpg" style="width: 100%; max-width: 300px; height: 280px; object-fit: cover; border-radius: 3px;" alt="Image">   
+          <a class="btn mx-auto" href="vaastu.html" role="button" style="z-index: 1000; margin-top: -15px; width: 200px; background-color: #116466; color: #d1e8e2;">Vaastu Consultancy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="box1" style="display: flex; justify-content: center; padding: 10px; margin-top: 50px;">
+  <div class="box2" style="max-width: 1300px;">
+    <div class="wrappers text-center" style="display: flex; flex-direction: column;">
+      <h1 clas="p-3" style="font-weight: 800; color: #2c3531;">Our <span style="color: #116466;">Work Samples</span></h1>
+      <div class="line" style="width: 60px; height: 5px; border-radius: 5px; background-color: #2c5351; margin: auto; margin-bottom: 20px;"></div>
+      <h4 clas="p-3" style="font-weight: 600;">Dzine Paradise offers a seamless, enjoyable, and stress-free method to instantly visualize your dream home in 3D.
+         With our simple and swift drawings and virtual tours, you can envision every corner of your house, 
+        empowering you to make informed decisions for your upcoming project.</h4>
+    </div>
+    <div class="box3" style="margin-inline: 15px;">
+      <div class="wrapper" id="carousel1">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <ul class="carousel">
+          <li class="card">
+            <div class="img"><img src="image4.jpg" alt="img" draggable="false"></div>
+          </li>
+          <li class="card">
+            <div class="img"><img src="image5.jpg" alt="img" draggable="false"></div>
+          </li>
+          <li class="card">
+            <div class="img"><img src="image6.jpg" alt="img" draggable="false"></div>
+          </li>
+          <li class="card">
+            <div class="img"><img src="image7.jpg" alt="img" draggable="false"></div>
+          </li>
+          <li class="card">
+            <div class="img"><img src="image8.jpg" alt="img" draggable="false"></div>
+          </li>
+          <li class="card">
+            <div class="img"><img src="image1.jpg" alt="img" draggable="false"></div>
+          </li>
+          <li class="card">
+            <div class="img"><img src="image2.jpg" alt="img" draggable="false"></div>
+          </li>
+          <li class="card">
+            <div class="img"><img src="image3.jpg" alt="img" draggable="false"></div>
+          </li>
+          <li class="card">
+            <div class="img"><img src="ST1.png" alt="img" draggable="false"></div>
+          </li>
+          <li class="card">
+            <div class="img"><img src="K3.png" alt="img" draggable="false"></div>
+          </li>
+          <li class="card">
+            <div class="img"><img src="lr.png" alt="img" draggable="false"></div>
+          </li>
+        </ul>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="aboutus" class="about rounded" style="background-color: #fafcff;">
+  <div class="row " style="background-color: #fafcff;">
+    <div class="col-md-6">
+      <h2 style="font-weight: 800; color: #116466;">VAASTU</h2>
+      <div class="line" style="width: 60px; height: 5px; border-radius: 5px; background-color: #2c5351; margin-bottom: 20px;"></div>
+      <p style="text-align: justify;">Welcome to Dzine Paradise, where we seamlessly blend modern interior design concepts with the 
+        ancient principles of Vaastu Shastra to create harmonious and balanced living spaces. We understand the 
+        significance of Vastu in creating homes that not only look beautiful but also radiate positive energy and wellbeing.</p>
+      <p style="text-align: justify;">Vaastu Shastra, an ancient Indian architectural science, focuses on the layout and design of living spaces to align them with the 
+        natural forces and elements. It encompasses principles that consider the orientation, placement, and arrangement of various elements in a building, 
+        such as the entrance, rooms, kitchen, and more, to ensure a harmonious environment for the inhabitants.</p><br>
+        <a type="button" href="vaastu.html" class="btn btn-outline-success">Know More</a>
+    </div>
+    <div class="col-md-6">
+      <img src="vastu2.jpg" alt="About Us" class="img-fluid p-2">
+    </div>
   </div>
 </div>
 
 <!-- Form Modal -->
 <div tabindex="-1" class="modal pmd-modal fade" id="form-dialog" style="display: none;" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content" style="background-color: #afa939; border-radius: 0;">
+      <div class="modal-content" style="background-color: #116466; border-radius: 0;">
           <div class="modal-header justify-content-end p-0" style="border-bottom: 0px;">
-            <button aria-hidden="true" data-dismiss="modal" class="close" type="button" style="background-color: #b8b352; height: 40px; width: 40px; border: 0px;">×</button>
+            <button aria-hidden="true" data-dismiss="modal" class="close" type="button" style="background-color: #3b888a; height: 40px; width: 40px; border: 0px;">×</button>
           </div>
           <div class="modal-body">
-              <form name="submit-to-google-sheet" style="margin-inline: 30px; color: white;">
+              <form name="submit-to-google-sheet" style="margin-inline: 30px; color: #d1e8e2;">
                 <a>Booking an Appointment</a>
                 <h3>Free Consultation</h3>
                   <div class="form-group ">
-                      <input name="Name" id="full-name" class="form-control" type="text" placeholder="Name" style="padding: 12px; background-color: #b8b352; margin-bottom: 15px; border: 0px;
+                      <input name="Name" id="full-name" class="form-control" type="text" placeholder="Name" style="padding: 12px; background-color: #3b888a; margin-bottom: 15px; border: 0px;
                       border-radius: 0;">
                   </div>
                   <div class="form-group ">
-                      <input name="Email" type="email" class="mat-input form-control" id="email" value="" placeholder="Email Address" style="padding: 12px; background-color: #b8b352; margin-bottom: 15px; border: 0px;
+                      <input name="Email" type="email" class="mat-input form-control" id="email" value="" placeholder="Email Address" style="padding: 12px; background-color: #3b888a; margin-bottom: 15px; border: 0px;
                       border-radius: 0;">
                   </div>
                   <div class="form-group ">
-                      <input name="Mobile" type="tel" class="mat-input form-control" id="mobil" value="" placeholder="Mobile No." style="padding: 12px; background-color: #b8b352; margin-bottom: 15px; border: 0px;
+                      <input name="Mobile" type="tel" class="mat-input form-control" id="mobil" value="" placeholder="Mobile No." style="padding: 12px; background-color: #3b888a; margin-bottom: 15px; border: 0px;
                       border-radius: 0;">
                   </div>
                   <div class="form-group ">
-                      <textarea name="Address" required class="form-control" cols="30" rows="4" placeholder="Address" style="padding: 12px; background-color: #b8b352; margin: 5px 0px 15px; border: 0px;
+                      <textarea name="Address" required class="form-control" cols="30" rows="4" placeholder="Address" style="padding: 12px; background-color: #3b888a; margin: 5px 0px 15px; border: 0px;
                       border-radius: 0;" ></textarea>
                   </div>                
                   <div class="btnsubmit mt-3" >
-                    <button  class="btn" type="submit" style="padding: 12px; background-color: #1c2331; color: white; width: 100%; max-width: 100%;" >Submit</button>
+                    <button  class="btn" type="submit" style="padding: 12px; background-color: #2c3531; color: #d1e8e2; width: 100%; max-width: 100%;" >Submit</button>
                   </div> 
                 </form>  
                 <div id="successMessage" style="display: none; color: green;">Form submitted successfully!</div>
@@ -100,130 +247,6 @@
 </div>
 <!-- Form Modal -->
 
-<div class="slide-outer">
-  <div class="slide-inner">
-<div class="slidebox" id="services">
-    <div class="wrapper text-center">
-      <h2 clas="p-3  fw-bold font-weight-bold">Your Ideal Home Construction Solutions</h2>
-    </div>
-  </div>
-
-<div class="flexOuter">
-  <div class="flex-container">
-    <div class="flex-item">
-      <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/structural.png" alt="structural"/>
-      <p><a href="2dlayout.html" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">2D Layout</a></p>
-    </div>
-    <div class="flex-item">
-      <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/home.png" alt="home"/>
-      <p><a href="3delevation.html" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">3D Elevation</a></p>
-    </div>
-    <div class="flex-item">
-     <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/room.png" alt="room"/>
-     <p><a href="interior.html" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Interior Designing</a></p>
-    </div>
-    <div class="flex-item">
-      <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/bill.png" alt="bill"/>
-      <p><a href="boq.html" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Detailed BOQ</a></p>
-    </div>
-    <div class="flex-item">
-      <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/umbrella.png" alt="umbrella"/>
-      <p><a href="" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Waterproofing</a></p>
-    </div>
-    <div class="flex-item">
-      <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/brick-wall.png" alt="brick-wall"/>
-      <p><a href="" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Construction</a></p>
-    </div>
-    <div class="flex-item">
-      <img width="94" height="94" src="https://img.icons8.com/external-kmg-design-outline-color-kmg-design/94/external-compass-summer-kmg-design-outline-color-kmg-design.png" alt="external-compass-summer-kmg-design-outline-color-kmg-design"/>
-       <p><a href="vaastu.html" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Vaastu</a></p>
-    </div>
-    <div class="flex-item">
-      <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/stack-of-photos.png" alt="stack-of-photos"/>
-      <p><a href="" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Readymade <br> 2D Layout</a></p>
-    </div>
-    <div class="flex-item">
-      <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/design.png" alt="design"/>  
-      <p><a href="" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Rough Estimate</a></p>
-    </div>
-    <div class="flex-item">
-      <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/home-decorations.png" alt="home-decorations"/>
-      <p><a href="" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Decoration</a></p>
-    </div>
-    <div class="flex-item">
-      <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/roller-brush.png" alt="roller-brush"/>
-      <p><a href="" class="link-body-emphasis link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold">Wallpaper & Paint</a></p>
-    </div>
-</div>
-</div></div></div>
-
-<div class="slide-outer">
-  <div class="slide-inner">
-    <div class="slidebox" style="padding-left: 20px;" id="gallery">
-      <div class="wrapper">
-        <h2>GALLERY</h2>
-      </div>
-    </div>
-  
-  <div class="slidebox" style="padding-left: 20px; padding-right: 20px;">
-    <div class="wrapper" id="carousel1">
-      <i id="left" class="fa-solid fa-angle-left"></i>
-      <ul class="carousel">
-        <li class="card">
-          <div class="img"><img src="image4.jpg" alt="img" draggable="false"></div>
-        </li>
-        <li class="card">
-          <div class="img"><img src="image5.jpg" alt="img" draggable="false"></div>
-        </li>
-        <li class="card">
-          <div class="img"><img src="image6.jpg" alt="img" draggable="false"></div>
-        </li>
-        <li class="card">
-          <div class="img"><img src="image7.jpg" alt="img" draggable="false"></div>
-        </li>
-        <li class="card">
-          <div class="img"><img src="image8.jpg" alt="img" draggable="false"></div>
-        </li>
-        <li class="card">
-          <div class="img"><img src="image1.jpg" alt="img" draggable="false"></div>
-        </li>
-        <li class="card">
-          <div class="img"><img src="image2.jpg" alt="img" draggable="false"></div>
-        </li>
-        <li class="card">
-          <div class="img"><img src="image3.jpg" alt="img" draggable="false"></div>
-        </li>
-        <li class="card">
-          <div class="img"><img src="ST1.png" alt="img" draggable="false"></div>
-        </li>
-        <li class="card">
-          <div class="img"><img src="K3.png" alt="img" draggable="false"></div>
-        </li>
-        <li class="card">
-          <div class="img"><img src="lr.png" alt="img" draggable="false"></div>
-        </li>
-      </ul>
-      <i id="right" class="fa-solid fa-angle-right"></i>
-    </div>
-  </div>  
-  </div>
-  
-</div>
-
-
-<div id="aboutus" class="about rounded">
-  <div class="row shadow">
-    <div class="col-md-6">
-      <h2>ABOUT US</h2>
-      <p style="text-align: justify;">At Dzine Paradise, we are passionate about transforming spaces into beautiful, functional, and inspiring environments. With a team of highly skilled and creative interior designers, we bring innovation and elegance to every project we undertake.</p>
-      <p style="text-align: justify;">We believe in the transformative power of design, and we're excited to embark on this creative journey with you. Our goal is to exceed your expectations and turn your vision into reality.</p>
-    </div>
-    <div class="col-md-6">
-      <img src="imagem.jpg" alt="About Us" class="img-fluid ">
-    </div>
-  </div>
-</div>
-
   <!-- Footer -->
   <footer class="text-center text-lg-start text-white pt-1" style="background-color: #1c2331; margin-top: 15px;">
 
@@ -232,9 +255,6 @@
       <div class="container text-center text-md-start mt-5">
         <!-- Grid row -->
         <div class="row mt-3">
-          <!-- Grid column -->
-          
-
           <!-- Grid column -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
@@ -284,9 +304,9 @@
             <!-- Links -->
             <h6 class="text-uppercase fw-bold">Contact Us</h6>
             <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 105px; background-color: #7c4dff; height: 2px"/>
-                <p><i class="fas fa-home mr-3"></i><a href="https://maps.app.goo.gl/C3bpJQxA53y4RDsj9" class="link-light link-offset-2 link-underline-opacity-0  link-underline-opacity-100-hover">Mahalakshmi Nagar, Indore, MP</a></p>
+                <p><i class="fas fa-home mr-3"></i><a href="https://maps.app.goo.gl/C3bpJQxA53y4RDsj9" class="link-light link-offset-2 link-underline-opacity-0  link-underline-opacity-100-hover"> Mahalakshami Nagar, Indore, MP</a></p>
                 <p><i class="fas fa-envelope mr-3"></i><a  href = "mailto: dzinep05@gmail.com" class="link-light link-offset-2 link-underline-opacity-0  link-underline-opacity-100-hover"> dzinep05@gmail.com</a></p>
-                <p><i class="fas fa-phone mr-3"></i><a  href = "tel: +91860-206-3193" class="link-light link-offset-2 link-underline-opacity-0  link-underline-opacity-100-hover"> + 91 860 206 3193</a></p>
+                <p><i class="fas fa-phone mr-3"></i><a  href = "tel: +91860-206-3193" class="link-light link-offset-2 link-underline-opacity-0  link-underline-opacity-100-hover"> +91 860 206 3193</a></p>
           </div>
           <!-- Grid column -->
           <!-- Grid column -->
@@ -295,20 +315,20 @@
             <h6 class="text-uppercase fw-bold">Connect With Us</h6>
             <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 150px; background-color: #7c4dff; height: 2px"/>
             <div>
+              <!-- whatsapp -->
+              <a href="https://wa.me/918602063193"
+              class="btn btn-outline-light btn-floating m-1"class="text-white"role="button"><i class="fab fa-whatsapp"></i></a>
+
+           <!-- Instagram -->
+           <a  href="https://instagram.com/dzinep05"
+              class="btn btn-outline-light btn-floating m-1"class="text-white"role="button"><i class="fab fa-instagram"></i></a>
+
               <a href="https://wa.me/918602063193" 
               class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-facebook-f"></i></a>
-      
-                  <!-- Twitter -->
-                  <a href="https://wa.me/918602063193"
-                     class="btn btn-outline-light btn-floating m-1"class="text-white"role="button"><i class="fab fa-twitter"></i></a>
-      
-                  <!-- Google -->
-                  <a href="https://wa.me/918602063193"
-                     class="btn btn-outline-light btn-floating m-1"class="text-white"role="button"><i class="fab fa-whatsapp"></i></a>
-      
-                  <!-- Instagram -->
-                  <a  href="https://instagram.com/dzinep05"
-                     class="btn btn-outline-light btn-floating m-1"class="text-white"role="button"><i class="fab fa-instagram"></i></a>
+              
+              <!-- Twitter -->
+              <a href="https://wa.me/918602063193"
+                 class="btn btn-outline-light btn-floating m-1"class="text-white"role="button"><i class="fab fa-twitter"></i></a>
             </div>
            </div>
           <!-- Grid column -->
@@ -328,6 +348,12 @@
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
      <script src="script.js" defer></script>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <!-- Link to Bootstrap JS (Optional, for Bootstrap features like modal dialogs) -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
     </body>
     </html>
