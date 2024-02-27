@@ -5,29 +5,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Nunito', sans-serif;
   transition: all 0.4s ease;
 }
 :root{
-    --body-color: #f19447;
-    --nav-color: #1c2331;
-    --side-nav: #010718;
-    --text-color: #FFF;
+    --body-color: #fafcff;
+    --nav-color: #2C3531;
+    --side-nav: #2c3531;
+    --text-color: #D1E8E2;
     --search-bar: #F2F2F2;
     --search-text: #010718;
+    --main-color: #116466;
+    --alt-color:#227ef0;
 }
 
 body{
     height: 100vh;
     background-color: var(--body-color);
-}
-
-body.dark{
-    --body-color: #18191A;
-    --nav-color: #242526;
-    --side-nav: #242526;
-    --text-color: #CCC;
-    --search-bar: #242526;
 }
 
 nav{
@@ -37,11 +31,6 @@ nav{
     width: 100%;
     background-color: var(--nav-color);
     z-index: 100;
-}
-
-body.dark nav{
-    border: 1px solid #393838;
-
 }
 
 nav .nav-bar{
@@ -96,7 +85,7 @@ nav .nav-bar .logo a{
 }
 
 .nav-links li a:hover{
-  color: #afa939;
+  color: #ffffff;
 }
 
 .nav-bar .darkLight-searchBox{
@@ -104,21 +93,6 @@ nav .nav-bar .logo a{
     align-items: center;
 }
 
-.darkLight-searchBox .dark-light,
-.darkLight-searchBox .searchToggle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 5px;
-}
-
-.dark-light i,
-.searchToggle i{
-    position: absolute;
-    color: var(--text-color);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
 @media (max-width: 915px) {
     nav .nav-bar .sidebarOpen{
         display: block;
@@ -193,6 +167,13 @@ nav .nav-bar .logo a{
   border-radius: 10px; 
 }
 .wrapper {
+  max-width: 1300px;
+  width: 100%;
+  position: relative;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.wrappers {
   max-width: 1300px;
   width: 100%;
   position: relative;
@@ -325,7 +306,7 @@ nav .nav-bar .logo a{
 }
 
 .flex-item:hover{
-  background-color: #afa939;
+  background-color: var(--main-color);
 }
 
 .flex-item img {
@@ -334,18 +315,26 @@ nav .nav-bar .logo a{
   height: auto; /* Maintain aspect ratio */
 }
 
+.ih{
+  font-weight: 700;
+}
+
 .about{
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 .about .row{
   max-width: 1300px;
   background: white;
   border-radius: 10px;
   padding: 10px;
+}
+
+.about p{
+  font-size: large;
 }
 
 .layer{
@@ -377,24 +366,25 @@ nav .nav-bar .logo a{
   position: absolute;
 }
 .homeInner h1{
-  font-family: 'Gabarito', cursive;
-  color: #afa939;
+  color: var(--main-color);
 }
  
 .getBtn{
-  background-color: #afa939; 
+  background-color: #116466; 
   margin-top: 20px;
-  border-radius: 25px;
+  margin-bottom: 20px;
+  padding: 10PX;
+  font-weight: 700;
+  border-radius: 0px;
   height: 40px;
-  color: white;
-  padding-inline: 20px;
-  border: 2px solid #01071800;
+  color: #D1E8E2;
+  border: none;
 }
+
 .getBtn:hover{
-  border: 2px solid #afa939;
-  background-color: white;
-  color: #afa939;
+  transform: scale(1.15);
 }
+
 .box{
   display: flex;
   justify-content: center;
@@ -432,7 +422,7 @@ nav .nav-bar .logo a{
 .sample-item {
   margin: 5px;
   border-radius: 10px;
-  border: 1px solid #afa939;
+  border: 1px solid #116466;
   background-color: white;
   text-align: center;
   max-width: 270px;
@@ -460,7 +450,7 @@ nav .nav-bar .logo a{
   padding: 10px;
 }
 .box-one span{
-  color: #176B87;
+  color: var(--main-color);
 }
 
 .paraOuter{
@@ -480,6 +470,7 @@ nav .nav-bar .logo a{
 .centerPara span{
   font-weight: bold;
   font-size: larger;
+  color: #2C3531;
 }
 .centerPara a{
   font-size: medium;
@@ -496,4 +487,29 @@ nav .nav-bar .logo a{
   .hidden-ss {
     display: none !important;
   }
+}
+
+.zoom-in-out-box {
+  margin: 24px;
+  width: 50px;
+  height: 50px;
+  animation: zoom-in-zoom-out 1.5s ease infinite;
+  text-align: center;
+  width: 100%;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.box-item:hover img{
+  transform: scale(1.2);
 }
